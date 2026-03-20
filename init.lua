@@ -1,0 +1,2 @@
+require("jsauvim")
+print("hello")

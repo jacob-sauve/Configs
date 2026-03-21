@@ -28,7 +28,7 @@ smear_cursor.setup({
 })
 --]]
 require("smear_cursor").setup({
-   cursor_color = "#ff4000",
+   cursor_color = "#B02EBF",
    particles_enabled = true,
    stiffness = 0.5,
    trailing_stiffness = 0.2,

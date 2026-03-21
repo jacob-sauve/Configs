@@ -1,8 +1,9 @@
 -- allow find recursively through subdirs
 vim.opt.path:append("**")
 
--- relative numbering
+-- relative numbering + normal for current line
 vim.opt.rnu = true
+vim.opt.nu = true
 
 -- thicc cursor
 vim.opt.guicursor = ""
@@ -17,3 +18,6 @@ vim.opt.backup = false
 -- scrolling
 vim.opt.scrolloff = 8
 vim.opt.signcolumn = "yes"
+
+-- colors
+vim.opt.termguicolors = true

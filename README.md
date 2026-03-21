@@ -8,4 +8,5 @@ Useful vim and nvim resources consulted to compile this config are:
 - The [Nvim documentation](https://neovim.io/doc/user/nvim/)
 - The [Neovim From Scratch](https://www.youtube.com/watch?v=ctH-a-1eUME&list=PLhoH5vyxr6Qq41NFL4GvhFp-WLd5xzIzZ) video series
 ### Requires:
-- [ctags](https://docs.ctags.io/en/latest/man/ctags.1.html)
+- [ctags](https://docs.ctags.io/en/latest/man/ctags.1.html) for tagging
+- [LazyVim](https://github.com/LazyVim/LazyVim) for plugin management

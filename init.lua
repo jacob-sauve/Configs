@@ -4,8 +4,8 @@ require("config.lazy")
 -- NEOSCROLL
 neoscroll = require("neoscroll")
 local keymap = {
-	["<Up>"] = function() neoscroll.ctrl_u({ duration = 250 }) end;
-	["<Down>"] = function() neoscroll.ctrl_d({ duration = 250 }) end;
+	["<Up>"] = function() neoscroll.ctrl_u({ duration = 200 }) end;
+	["<Down>"] = function() neoscroll.ctrl_d({ duration = 200 }) end;
 }
 local modes = {'n', 'v', 'x'}
 for key, func in pairs(keymap) do
@@ -30,10 +30,13 @@ smear_cursor.setup({
 require("smear_cursor").setup({
    cursor_color = "#B02EBF",
    particles_enabled = true,
-   stiffness = 0.5,
+   stiffness = 0.8,
    trailing_stiffness = 0.2,
+   stiffness_insert_mode = 0.7,
    trailing_exponent = 5,
-   damping = 0.6,
+   damping = 0.85,
+   damping_insert_mode = 0.95,
+   distance_stop_animating = 0.5,
    gradient_exponent = 0,
    gamma = 1,
    never_draw_over_target = true, -- if you want to actually see under the cursor

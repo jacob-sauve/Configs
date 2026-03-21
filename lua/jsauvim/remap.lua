@@ -13,3 +13,6 @@ vim.keymap.set("n", "<leader>wtf", "g<C-]>")
 -- move text to 1 line after end of current selection, reselect, autoindent, reselect
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
+
+-- custom - see tree of directory when in netrw
+--vim.keymap.set()

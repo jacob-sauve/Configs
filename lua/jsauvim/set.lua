@@ -21,3 +21,10 @@ vim.opt.signcolumn = "yes"
 
 -- colors
 vim.opt.termguicolors = true
+
+-- indentation
+vim.opt.tabstop = 4
+vim.opt.softtabstop = 4
+vim.opt.shiftwidth = 4
+vim.opt.expandtab = truw
+vim.opt.smartindent = true

@@ -44,3 +44,19 @@ local openers = {
 for ochar, cchar in pairs(openers) do
     vim.keymap.set('i', ochar, ochar .. cchar .. "<Esc>i")
 end
+
+-- unindenting with shift-tab in all modes
+local modes = {
+    ['v'] = {'<gv', '>gv'},
+    ['i'] = {'<C-d>', '<C-t>'},
+    ['n'] = {'<<', '>>'},
+}
+for mode, toggles in pairs(modes) do
+    vim.keymap.set(mode, "<S-Tab>", toggles[1]) --1st element
+    vim.keymap.set(mode, "<Tab>", toggles[2])
+end
+
+-- auto-commenting with cmd-/
+vim.keymap.set('n', '<C-/>', function()
+print("yo wsg")
+end)

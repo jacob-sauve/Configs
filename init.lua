@@ -51,3 +51,5 @@ require("smear_cursor").setup({
    particle_gravity = -50,
    min_distance_emit_particles = 0,
 })
+
+vim.lsp.enable('luals')

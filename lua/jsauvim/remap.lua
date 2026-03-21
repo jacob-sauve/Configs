@@ -27,4 +27,19 @@ end)
 vim.keymap.set({'n', 'v'}, "<leader>y", "\"+y")
 vim.keymap.set('n', "<leader>Y", "\"+Y")
 
--- custom - see tree of directory when in netrw
+-- toggle inline hints
+vim.keymap.set('n', "<leader>h", function()
+    vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled());
+end)
+
+-- quote, bracket etc. auto complete
+local openers = {
+    ["\""] = "\"",
+    ["\'"] = "\'",
+    ["("] = ")",
+    ["["] = "]",
+    ["{"] = "}",
+}
+for ochar, cchar in pairs(openers) do
+    vim.keymap.set('i', ochar, ochar .. cchar .. "<Esc>i")
+end

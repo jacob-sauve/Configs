@@ -4,3 +4,7 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
+["<Down>"] 	init.lua	/^	["<Down>"] = function() neoscroll.ctrl_d({ duration = 200 }) end;$/;"	f
+["<Up>"] 	init.lua	/^	["<Up>"] = function() neoscroll.ctrl_u({ duration = 200 }) end;$/;"	f
+config 	lua/plugins/cyberdream.lua	/^    config = function()$/;"	f
+config 	lua/plugins/neoscroll.lua	/^    config = function()$/;"	f

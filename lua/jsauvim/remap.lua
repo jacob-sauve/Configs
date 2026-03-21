@@ -39,6 +39,7 @@ local openers = {
     ["("] = ")",
     ["["] = "]",
     ["{"] = "}",
+    ["<"] = ">",
 }
 for ochar, cchar in pairs(openers) do
     vim.keymap.set('i', ochar, ochar .. cchar .. "<Esc>i")

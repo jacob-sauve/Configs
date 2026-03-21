@@ -23,6 +23,9 @@ vim.keymap.set({'n', 'i', 'v'}, "<C-,>", function ()
 	end
 end)
 
+-- yank to system clipboard!
+vim.keymap.set({'n', 'v'}, "<leader>y", "\"+y")
+vim.keymap.set('n', "<leader>Y", "\"+Y")
 
 -- custom - see tree of directory when in netrw
 --vim.keymap.set()

@@ -21,5 +21,4 @@ return {
         ignored_events = { "WinScrolled", "CursorMoved" },
       })
     end,
-  },
 }

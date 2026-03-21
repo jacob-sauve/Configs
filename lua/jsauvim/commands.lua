@@ -6,3 +6,6 @@ vim.api.nvim_create_user_command(
 	end,
 	{}
 )
+
+-- custom - see tree of directory when in netrw
+-- TBD, currently not worth the trouble

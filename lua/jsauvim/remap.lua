@@ -10,7 +10,7 @@ vim.keymap.set("n", "<leader>b", vim.cmd.bw)
 vim.keymap.set("n", "<leader>wtf", "g<C-]>")
 
 -- move selected text up/down
--- move text to 1 line after end of current Selection, re select, auto indent, re select
+-- move text to 1 line after end of current selection, re select, auto indent, re select
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 
@@ -28,4 +28,3 @@ vim.keymap.set({'n', 'v'}, "<leader>y", "\"+y")
 vim.keymap.set('n', "<leader>Y", "\"+Y")
 
 -- custom - see tree of directory when in netrw
---vim.keymap.set()

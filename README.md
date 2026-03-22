@@ -46,8 +46,6 @@ Useful vim and nvim resources consulted to compile this config are:
 - [LazyVim](https://github.com/LazyVim/LazyVim) for plugin management
 - [fzf](https://github.com/junegunn/fzf/tree/master) for fuzzyfind command
 
-_Config by Jacob Sauvé, [@jacob-sauve](https://github.com/jacob-sauve)_
-
 ## zsh
 
 Currently quite simple, contains:
@@ -58,3 +56,6 @@ Currently quite simple, contains:
 ### Requires:
 - [zoxide](https://github.com/ajeetdsouza/zoxide) for smarter cd
 - [fzf](https://github.com/junegunn/fzf/tree/master) for fuzzyfind command
+
+***
+_Configs by Jacob Sauvé, [@jacob-sauve](https://github.com/jacob-sauve)_

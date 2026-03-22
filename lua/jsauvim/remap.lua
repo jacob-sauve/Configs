@@ -3,9 +3,8 @@ vim.g.mapleader = " "
 
 -- MAPPINGS
 vim.keymap.set("n", "<leader>..", vim.cmd.Ex)
-vim.keymap.set("n", "<leader>f", function ()
-	vim.cmd.find(vim.fn.input("Find > "))
-end)
+vim.keymap.set("n", "<leader>f", [[:find<Space>]])
+
 vim.keymap.set("n", "<leader>b", vim.cmd.bw)
 vim.keymap.set("n", "<leader>wtf", "g<C-]>")
 

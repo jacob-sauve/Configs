@@ -56,7 +56,7 @@ vim.keymap.set('n', "<leader>h", function()
     vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled());
 end)
 
--- quote, bracket etc. auto complete
+-- quote, bracket etc. auto complete (if tabbed after)
 local openers = {
     ["\""] = "\"",
     ["\'"] = "\'",
@@ -66,7 +66,7 @@ local openers = {
     ["<"] = ">",
 }
 for ochar, cchar in pairs(openers) do
-    vim.keymap.set('i', ochar, ochar .. cchar .. "<Esc>i")
+    vim.keymap.set('i', ochar .. "<Tab>", ochar .. cchar .. "<Esc>i")
 end
 
 -- unindenting with shift-tab in all modes

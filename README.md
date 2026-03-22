@@ -9,6 +9,7 @@ Useful vim and nvim resources consulted to compile this config are:
 - Thoughtbot's [How to Do 90% of What Plugins Do](https://www.youtube.com/watch?v=XA2WjJbmmoM) and [Let Vim Do the Typing](https://www.youtube.com/watch?v=3TX3kV3TICU) videos
 - The [Nvim documentation](https://neovim.io/doc/user/nvim/)
 - The [Neovim From Scratch](https://www.youtube.com/watch?v=ctH-a-1eUME&list=PLhoH5vyxr6Qq41NFL4GvhFp-WLd5xzIzZ) video series
+- Elan Medoff's blog post on [running fzf in neovim natively](https://elanmed.dev/blog/native-fzf-in-neovim)
 
 ### Requires:
 

@@ -1,6 +1,9 @@
 # Configs
 
 My config files.
+<br>
+<br>
+_**‼️ Do note that this repository is contained within my `~/.config/` directory on my local computer, and thus sometimes assumes that arborescence ‼️**_
 
 ## Neovim
 

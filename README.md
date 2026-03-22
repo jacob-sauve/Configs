@@ -53,7 +53,7 @@ _Config by Jacob Sauvé, [@jacob-sauve](https://github.com/jacob-sauve)_
 Currently quite simple, contains:
 - aliases
 - colourful man pages
-- a fox with a randomised quote at login (_requires a document with one quote per line and updating the filepath on line 45_)
+- a fox with a randomised quote at login (_requires `zsh/quotes.txt`_)
 - a simple but useful prompt
 ### Requires:
 - [zoxide](https://github.com/ajeetdsouza/zoxide) for smarter cd

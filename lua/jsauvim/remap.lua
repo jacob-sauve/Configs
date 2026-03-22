@@ -14,6 +14,10 @@ vim.keymap.set("n", "<leader>wtf", "g<C-]>")
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 
+-- yank to system clipboard!
+vim.keymap.set({'n', 'v'}, "<leader>y", "\"+y")
+vim.keymap.set('n', "<leader>Y", "\"+Y")
+
 -- toggle spellcheck
 vim.keymap.set({'n', 'i', 'v'}, "<C-,>", function ()
 	vim.opt.spell = not vim.opt.spell:get();
@@ -23,9 +27,30 @@ vim.keymap.set({'n', 'i', 'v'}, "<C-,>", function ()
 	end
 end)
 
--- yank to system clipboard!
-vim.keymap.set({'n', 'v'}, "<leader>y", "\"+y")
-vim.keymap.set('n', "<leader>Y", "\"+Y")
+-- keep J, 1/2 page jumps and search result nav centred
+vim.keymap.set("n", "J", "mzJ`z")
+vim.keymap.set("n", "<C-d>", "<C-d>zz")
+vim.keymap.set("n", "<C-u>", "<C-u>zz")
+vim.keymap.set("n", "n", "nzzzv")
+vim.keymap.set("n", "N", "Nzzzv")
+
+-- option to delete to void register (don't keep value)
+vim.keymap.set({"n", "v"}, "<leader>d", "\"_d")
+
+-- replace word currently on with subsequent input
+vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
+
+-- make current file executable
+vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
+
+-- shoutout
+vim.keymap.set("n", "<leader><leader>", "<cmd>so<CR>")
+
+
+-- lsp formatting toggle ('justify')
+vim.keymap.set("n", "<leader>j", function()
+    vim.lsp.buf.format()
+end)
 
 -- toggle inline hints
 vim.keymap.set('n', "<leader>h", function()

@@ -11,7 +11,7 @@ vim.opt.nu = true
 -- thicc cursor
 vim.opt.guicursor = ""
 
--- search incrementally
+-- highlight search incrementally
 vim.opt.hlsearch = false
 vim.opt.incsearch = true
 
@@ -31,3 +31,6 @@ vim.opt.softtabstop = 4
 vim.opt.shiftwidth = 4
 vim.opt.expandtab = true
 vim.opt.smartindent = true
+
+-- SPEED
+vim.opt.updatetime = 50 -- ms

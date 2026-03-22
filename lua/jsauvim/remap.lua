@@ -57,6 +57,9 @@ for mode, toggles in pairs(modes) do
 end
 
 -- auto-commenting with cmd-/
-vim.keymap.set('n', '<C-/>', function()
-print("yo wsg")
+vim.keymap.set('v', '<C-/>', function()
+    --vim.cmd(":'<-2p")
+    --vim.api.nvim_put({"--[["}, "", false, false)
+    --vim.cmd(":'>")
+    print("to be implemented...")
 end)

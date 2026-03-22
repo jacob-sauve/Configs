@@ -1,8 +1,7 @@
 require("jsauvim.remap")
-require("jsauvim.fzf")
 require("jsauvim.set")
 require("jsauvim.commands")
 require("jsauvim.lsp")
+require("jsauvim.lazygit")
+require("jsauvim.fzf")
 --print("hello, comrades")
-
-	 

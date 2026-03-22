@@ -11,7 +11,7 @@ export GROFF_NO_SGR=1                  # don't use SGR
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
-${HOME}/bash_testing/foxsay.sh "$(${HOME}/bash_testing/quote.sh)"
+#${HOME}/bash_testing/foxsay.sh "$(${HOME}/bash_testing/quote.sh)"
 
 
 autoload -Uz vcs_info
@@ -38,3 +38,8 @@ export FZF_DEFAULT_OPTS="
     --preview 'fzf-preview.sh {}' \
     --bind 'focus:transform-header:file --brief {}'"
 
+# Makes a fox say whatever you input; here, a quote
+declare -i x=$(date +%s) # Get random seed (date in ns)
+x=$(expr $x + 0) # Convert to integer
+x=$((x % $(wc -l < $HOME/bash_testing/quotes.txt) + 1)) # Generate rand num between 1 and num quotes
+echo "____________________\n"$(head -$x $HOME/bash_testing/quotes.txt | tail -1)"\n____________________\n   v\n    ^__^\n ._/.. /     ^ \n  \o__/  __/^^\\ \n  /v v \/ ____/\n  \V--V/_/" | fold -s -20

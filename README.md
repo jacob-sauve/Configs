@@ -18,3 +18,10 @@ Useful vim and nvim resources consulted to compile this config are:
 - [fzf](https://github.com/junegunn/fzf/tree/master) for fuzzyfind command
 
 _Config by Jacob Sauvé, [@jacob-sauve](https://github.com/jacob-sauve)_
+
+## zsh
+
+
+### Requires:
+- [zoxide](https://github.com/ajeetdsouza/zoxide) for smarter cd
+- [fzf](https://github.com/junegunn/fzf/tree/master) for fuzzyfind command

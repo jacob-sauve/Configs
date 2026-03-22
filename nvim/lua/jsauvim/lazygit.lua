@@ -17,7 +17,8 @@ vim.api.nvim_create_user_command(
         vim.fn.jobstart("lazygit", {
             term = true,
             on_exit = function()
-                           end,
+                vim.cmd(":q"); --auto exit when process terminates
+            end,
         })
         vim.cmd "startinsert"
     end,

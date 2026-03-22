@@ -15,5 +15,6 @@ Useful vim and nvim resources consulted to compile this config are:
 
 - [ctags](https://docs.ctags.io/en/latest/man/ctags.1.html) for tagging
 - [LazyVim](https://github.com/LazyVim/LazyVim) for plugin management
+- [fzf](https://github.com/junegunn/fzf/tree/master) for fuzzyfind command
 
 _Config by Jacob Sauvé, [@jacob-sauve](https://github.com/jacob-sauve)_

@@ -51,19 +51,19 @@ Useful vim and nvim resources consulted to compile this config are:
 - Cool custom commands in `commands.lua`
 - A couple of my DIY 'plugins':
     - `fzf.lua`, a _very_ light (~40 lines!) fzf integration in a pop-up window for better searching
-    - `lazygit.lua` a lazygit integration in a pop-up window to manage your repo without leaving nvim!
+    - `lazygit.lua`, a lazygit integration in a pop-up window to manage your repo without leaving nvim!
 - Some pretty and/or powerful plugins, managed by [LazyVim](https://github.com/LazyVim/LazyVim):
-    - neoscroll for smoooooooth scrolling
-    - smear-cursor for a cursor with undeniable snazz
-    - mason and mason-lspconfig for LSP installation and management
-    - cyberdream for pretty colours
-    - mini for surround, completion...
+    - [neoscroll](https://github.com/karb94/neoscroll.nvim) for smoooooooth scrolling
+    - [smear-cursor](https://github.com/sphamba/smear-cursor.nvim) for a cursor with undeniable snazz
+    - [mason](https://github.com/mason-org/mason.nvim) and [mason-lspconfig](https://github.com/mason-org/mason-lspconfig.nvim) for LSP installation and management
+    - [cyberdream](https://github.com/scottmckendry/cyberdream.nvim) for pretty colours
+    - [mini](https://github.com/nvim-mini/) for surround, completion...
 
 
 
 ### Requires:
 
-- [ctags](https://docs.ctags.io/en/latest/man/ctags.1.html) for tagging
+- [ctags](https://docs.ctags.io/en/latest/man/ctags.1.html) for tagging command
 - [LazyVim](https://github.com/LazyVim/LazyVim) for plugin management
 - [fzf](https://github.com/junegunn/fzf/tree/master) for fuzzyfind command
 - [Lazygit](https://github.com/jesseduffield/lazygit) for lazygit command

@@ -21,11 +21,12 @@ return {
     particle_spread = 1,
     particles_per_second = 500,
     particles_per_length = 50,
-    particle_max_lifetime = 800,
+    particle_max_lifetime = 500,
     particle_max_initial_velocity = 20,
     particle_velocity_from_cursor = 0.5,
     particle_damping = 0.15,
     particle_gravity = -50,
     min_distance_emit_particles = 0,
+    particles_over_text = false,
   },
 }

@@ -43,3 +43,8 @@ declare -i x=$(date +%s) # Get random seed (date in ns)
 x=$(expr $x + 0) # Convert to integer
 x=$((x % $(wc -l < $HOME/.config/zsh/quotes.txt) + 1)) # Generate rand num between 1 and num quotes
 echo "____________________\n"$(head -$x $HOME/.config/zsh/quotes.txt | tail -1)"\n____________________\n   v\n    ^__^\n ._/.. /     ^ \n  \o__/  __/^^\\ \n  /v v \/ ____/\n  \V--V/_/" | fold -s -20
+
+# autocomplete suggestion menu in cmdline settings
+# borrowed from Bread on Penguins
+zstyle ':completion:*' menu select
+zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS} ma=0\;33

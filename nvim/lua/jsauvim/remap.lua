@@ -45,6 +45,9 @@ vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
 -- shoutout
 vim.keymap.set("n", "<leader><leader>", "<cmd>so<CR>")
 
+-- lazyvim update
+vim.keymap.set("n", "<leader>lv", [[:Lazy<CR>]])
+
 -- lsp formatting toggle ('justify')
 vim.keymap.set("n", "<leader>j", function()
     vim.lsp.buf.format()

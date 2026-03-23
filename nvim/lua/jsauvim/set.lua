@@ -1,5 +1,6 @@
 -- allow find recursively through subdirs
 vim.opt.path:append("**")
+
 -- allow tag autocompletion by looking in includes and dict
 -- (dict only when spellcheck enabled)
 vim.opt.complete:append(",i,kspell")

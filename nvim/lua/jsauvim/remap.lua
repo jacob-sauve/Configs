@@ -45,16 +45,13 @@ vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
 -- shoutout
 vim.keymap.set("n", "<leader><leader>", "<cmd>so<CR>")
 
-
 -- lsp formatting toggle ('justify')
 vim.keymap.set("n", "<leader>j", function()
     vim.lsp.buf.format()
 end)
 
 -- toggle inline hints
-vim.keymap.set('n', "<leader>h", function()
-    vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled());
-end)
+vim.keymap.set('n', "<leader>h", vim.lsp.buf.hover)
 
 -- quote, bracket etc. auto complete (if tabbed after)
 local openers = {

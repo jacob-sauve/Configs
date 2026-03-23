@@ -4,39 +4,41 @@ My config files.
 <br>
 <br>
 _**‼️ Do note that this repository is contained within my `~/.config/` directory on my local computer, and thus sometimes assumes that arborescence ‼️**_
-<br>
-<br>
-Here is the current filetree of the essential files in this repository:
+
+## Neovim
+
+### Overview 
+<details>
+    <summary>Expand filetree </summary>
+
 ```
 .
-├── nvim
-│   ├── init.lua
-│   ├── lazy-lock.json
-│   ├── lua
-│   │   ├── config
-│   │   │   └── lazy.lua
-│   │   ├── jsauvim
-│   │   │   ├── commands.lua
-│   │   │   ├── fzf.lua
-│   │   │   ├── init.lua
-│   │   │   ├── lazygit.lua
-│   │   │   ├── lsp.lua
-│   │   │   ├── mini.lua
-│   │   │   ├── remap.lua
-│   │   │   └── set.lua
-│   │   └── plugins
-│   │       ├── cyberdream.lua
-│   │       ├── mason_lspconfig.lua
-│   │       ├── mason.lua
-│   │       ├── mini.lua
-│   │       ├── neoscroll.lua
-│   │       └── smear_cursor.lua
-│   └── tags
-└── zsh
-    ├── quotes.txt
-    └── mason_lspconfig.lua
+└── nvim
+    ├── init.lua
+    ├── lazy-lock.json
+    ├── lua
+    │   ├── config
+    │   │   └── lazy.lua
+    │   ├── jsauvim
+    │   │   ├── commands.lua
+    │   │   ├── fzf.lua
+    │   │   ├── init.lua
+    │   │   ├── lazygit.lua
+    │   │   ├── lsp.lua
+    │   │   ├── mini.lua
+    │   │   ├── remap.lua
+    │   │   └── set.lua
+    │   └── plugins
+    │       ├── cyberdream.lua
+    │       ├── mason_lspconfig.lua
+    │       ├── mason.lua
+    │       ├── mini.lua
+    │       ├── neoscroll.lua
+    │       └── smear_cursor.lua
+    └── tags
 ```
-## Neovim
+
+</details>
 
 Useful vim and nvim resources consulted to compile this config are:
 - The Primeagen's [0 to LSP](https://www.youtube.com/watch?v=w7i4amO_zaE) video
@@ -69,17 +71,33 @@ Useful vim and nvim resources consulted to compile this config are:
 - [Lazygit](https://github.com/jesseduffield/lazygit) for lazygit command
 
 ## zsh
+
+### Overview 
+<details>
+    <summary>Expand filetree </summary>
+    
+```
+.
+└── zsh
+    ├── quotes.txt
+    └── .zshrc
+```
+</details>
 In order for zsh to find this config file in the recommended arborescence, include the following code in your `~/.zshenv` file:
+
 ```
 # allow zsh to find the rc file
 export ZDOTDIR="$HOME/.config/zsh"
 ```
+
 ### Features
+
 Currently quite simple, contains:
 - aliases
 - colourful man pages
 - a fox with a randomised quote at login (_requires `zsh/quotes.txt`_)
-- a simple but useful prompt
+- a simple but useful custom prompt with current git branch
+
 ### Requires:
 - [zoxide](https://github.com/ajeetdsouza/zoxide) for smarter cd
 - [fzf](https://github.com/junegunn/fzf/tree/master) for fuzzyfind command

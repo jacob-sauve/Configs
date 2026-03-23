@@ -50,7 +50,11 @@ Useful vim and nvim resources consulted to compile this config are:
 - [Lazygit](https://github.com/jesseduffield/lazygit) for lazygit command
 
 ## zsh
-
+In order for zsh to find this config file in the recommended arborescence, include the following code in your `~/.zshenv` file:
+```
+# allow zsh to find the rc file
+export ZDOTDIR="$HOME/.config/zsh"
+```
 Currently quite simple, contains:
 - aliases
 - colourful man pages

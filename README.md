@@ -11,6 +11,7 @@ Here is the current filetree of the essential files in this repository:
 .
 ├── nvim
 │   ├── init.lua
+│   ├── lazy-lock.json
 │   ├── lua
 │   │   ├── config
 │   │   │   └── lazy.lua
@@ -25,13 +26,15 @@ Here is the current filetree of the essential files in this repository:
 │   │   │   └── set.lua
 │   │   └── plugins
 │   │       ├── cyberdream.lua
+│   │       ├── mason_lspconfig.lua
+│   │       ├── mason.lua
 │   │       ├── mini.lua
 │   │       ├── neoscroll.lua
 │   │       └── smear_cursor.lua
 │   └── tags
 └── zsh
-    └── quotes.txt
-
+    ├── quotes.txt
+    └── mason_lspconfig.lua
 ```
 ## Neovim
 
@@ -41,6 +44,22 @@ Useful vim and nvim resources consulted to compile this config are:
 - The [Nvim documentation](https://neovim.io/doc/user/nvim/)
 - The [Neovim From Scratch](https://www.youtube.com/watch?v=ctH-a-1eUME&list=PLhoH5vyxr6Qq41NFL4GvhFp-WLd5xzIzZ) video series
 - Elan Medoff's blog post on [running fzf in neovim natively](https://elanmed.dev/blog/native-fzf-in-neovim)
+
+### Features
+- Effective keybinds in `remap.lua`
+- Awesome options in `set.lua`
+- Cool custom commands in `commands.lua`
+- A couple of my DIY 'plugins':
+    - `fzf.lua`, a _very_ light (~40 lines!) fzf integration in a pop-up window for better searching
+    - `lazygit.lua` a lazygit integration in a pop-up window to manage your repo without leaving nvim!
+- Some pretty and/or powerful plugins, managed by [LazyVim](https://github.com/LazyVim/LazyVim):
+    - neoscroll for smoooooooth scrolling
+    - smear-cursor for a cursor with undeniable snazz
+    - mason and mason-lspconfig for LSP installation and management
+    - cyberdream for pretty colours
+    - mini for surround, completion...
+
+
 
 ### Requires:
 
@@ -55,6 +74,7 @@ In order for zsh to find this config file in the recommended arborescence, inclu
 # allow zsh to find the rc file
 export ZDOTDIR="$HOME/.config/zsh"
 ```
+### Features
 Currently quite simple, contains:
 - aliases
 - colourful man pages

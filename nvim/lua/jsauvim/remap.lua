@@ -48,6 +48,9 @@ vim.keymap.set("n", "<leader><leader>", "<cmd>so<CR>")
 -- lazyvim update
 vim.keymap.set("n", "<leader>lv", [[:Lazy<CR>]])
 
+-- manual line autocompletion override
+vim.keymap.set('i', '<C-x><C-l>', '<C-x><C-l>', { noremap = true })
+
 -- lsp formatting toggle ('justify')
 vim.keymap.set("n", "<leader>j", function()
     vim.lsp.buf.format()

@@ -11,7 +11,6 @@ Here is the current filetree of the essential files in this repository:
 .
 ├── nvim
 │   ├── init.lua
-│   ├── lazy-lock.json
 │   ├── lua
 │   │   ├── config
 │   │   │   └── lazy.lua
@@ -21,16 +20,18 @@ Here is the current filetree of the essential files in this repository:
 │   │   │   ├── init.lua
 │   │   │   ├── lazygit.lua
 │   │   │   ├── lsp.lua
+│   │   │   ├── mini.lua
 │   │   │   ├── remap.lua
 │   │   │   └── set.lua
 │   │   └── plugins
 │   │       ├── cyberdream.lua
+│   │       ├── mini.lua
 │   │       ├── neoscroll.lua
 │   │       └── smear_cursor.lua
 │   └── tags
 └── zsh
     └── quotes.txt
-    └── .zshrc
+
 ```
 ## Neovim
 

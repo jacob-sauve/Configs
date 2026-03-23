@@ -15,12 +15,12 @@ local lsp_map = {
 
 -- Setup all lsp servers in map
 for lsp, opts in pairs(lsp_map) do
-    vim.lsp.enable(lsp)
     vim.lsp.config(lsp, {
         cmd = opts[1],
         filetypes = opts[2],
         root_markers = opts[3],
     })
+    vim.lsp.enable(lsp)
 end
 
 -- Set omnifunc based on LSP (itself based on filetype)

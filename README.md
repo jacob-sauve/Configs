@@ -14,28 +14,27 @@ _**‼️ Do note that this repository is contained within my `~/.config/` direc
 ```
 .
 └── nvim
-    ├── init.lua
+    ├── init.lua
     ├── lazy-lock.json
-    ├── lua
-    │   ├── config
-    │   │   └── lazy.lua
-    │   ├── jsauvim
-    │   │   ├── commands.lua
-    │   │   ├── fzf.lua
-    │   │   ├── init.lua
-    │   │   ├── lazygit.lua
-    │   │   ├── lsp.lua
-    │   │   ├── mini.lua
-    │   │   ├── remap.lua
-    │   │   └── set.lua
-    │   └── plugins
-    │       ├── cyberdream.lua
-    │       ├── mason_lspconfig.lua
-    │       ├── mason.lua
-    │       ├── mini.lua
-    │       ├── neoscroll.lua
-    │       └── smear_cursor.lua
-    └── tags
+    └── lua
+        ├── config
+        │   └── lazy.lua
+        ├── jsauvim
+        │   ├── commands.lua
+        │   ├── fzf.lua
+        │   ├── init.lua
+        │   ├── lazygit.lua
+        │   ├── lsp.lua
+        │   ├── mini.lua
+        │   ├── remap.lua
+        │   └── set.lua
+        └── plugins
+            ├── cyberdream.lua
+            ├── mason_lspconfig.lua
+            ├── mason.lua
+            ├── mini.lua
+            ├── neoscroll.lua
+            └── smear_cursor.luanvim
 ```
 
 </details>

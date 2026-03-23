@@ -1,4 +1,5 @@
-local lsp_map = {
+-- Currently replaced by mason and mason-lspconfig
+--[[  local lsp_map = {
     -- Lua
     ['luals'] = {
         cmd = {'lua-language-server'},
@@ -24,4 +25,4 @@ for lsp, opts in pairs(lsp_map) do
 end
 
 -- Set omnifunc based on LSP (itself based on filetype)
-vim.opt.omnifunc = "v:lua.MiniCompletion.completefunc_lsp"
+vim.opt.omnifunc = "v:lua.MiniCompletion.completefunc_lsp" ]]--

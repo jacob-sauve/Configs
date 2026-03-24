@@ -59,7 +59,7 @@ Useful vim and nvim resources consulted to compile this config are:
     - [smear-cursor](https://github.com/sphamba/smear-cursor.nvim) for a cursor with undeniable snazz
     - [mason](https://github.com/mason-org/mason.nvim) and [mason-lspconfig](https://github.com/mason-org/mason-lspconfig.nvim) for LSP installation and management
     - [cyberdream](https://github.com/scottmckendry/cyberdream.nvim) for pretty colours
-    - [mini](https://github.com/nvim-mini/) for surround, completion...
+    - [mini](https://github.com/nvim-mini/mini.nvim) for surround, completion...
 
 
 

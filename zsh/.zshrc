@@ -46,5 +46,5 @@ echo "____________________\n"$(head -$x $HOME/.config/zsh/quotes.txt | tail -1)"
 
 # autocomplete suggestion menu in cmdline settings
 # borrowed from Bread on Penguins
-zstyle ':completion:*' menu select
-zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS} ma=0\;33
+#zstyle ':completion:*' menu select
+#zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS} ma=0\;33

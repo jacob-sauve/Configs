@@ -45,6 +45,7 @@ Useful vim and nvim resources consulted to compile this config are:
 - The [Nvim documentation](https://neovim.io/doc/user/nvim/)
 - The [Neovim From Scratch](https://www.youtube.com/watch?v=ctH-a-1eUME&list=PLhoH5vyxr6Qq41NFL4GvhFp-WLd5xzIzZ) video series
 - Elan Medoff's blog post on [running fzf in neovim natively](https://elanmed.dev/blog/native-fzf-in-neovim)
+- TJ DeVries's [simple neovim debugging setup](https://www.youtube.com/watch?v=lyNfnI-B640)
 
 ### Features
 - Effective keybinds in `remap.lua`

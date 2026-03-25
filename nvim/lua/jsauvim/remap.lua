@@ -61,12 +61,12 @@ vim.keymap.set('n', "<leader>h", vim.lsp.buf.hover)
 
 -- for lsp: open error/warning on a line
 vim.keymap.set('n', "<leader>e", vim.diagnostic.open_float)
--- navigate between errors/warnings
-vim.keymap.set('n', '<leader>en', function()
+-- navigate between errors/warnings (diagnostics)
+vim.keymap.set('n', ']d', function()
     vim.diagnostic.goto_next()
     vim.diagnostic.open_float()
 end)
-vim.keymap.set('n', '<leader>ep', function()
+vim.keymap.set('n', '[d', function()
     vim.diagnostic.goto_prev()
     vim.diagnostic.open_float()
 end)
@@ -76,8 +76,8 @@ vim.keymap.set('n', '<leader>co', function()
     vim.diagnostic.setqflist() -- create quickfix list
     vim.cmd([[:copen]])
 end)
-vim.keymap.set('n', '<leader>cn', [[:cnext<CR>]]) 
-vim.keymap.set('n', '<leader>cp', [[:cprev<CR>]])
+vim.keymap.set('n', 'cn', [[:cnext<CR>]]) 
+vim.keymap.set('n', 'cp', [[:cprev<CR>]])
 
 -- quote, bracket etc. auto complete (if tabbed after)
 local openers = {

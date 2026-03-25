@@ -59,6 +59,26 @@ end)
 -- toggle inline hints
 vim.keymap.set('n', "<leader>h", vim.lsp.buf.hover)
 
+-- for lsp: open error/warning on a line
+vim.keymap.set('n', "<leader>e", vim.diagnostic.open_float)
+-- navigate between errors/warnings
+vim.keymap.set('n', '<leader>en', function()
+    vim.diagnostic.goto_next()
+    vim.diagnostic.open_float()
+end)
+vim.keymap.set('n', '<leader>ep', function()
+    vim.diagnostic.goto_prev()
+    vim.diagnostic.open_float()
+end)
+
+-- quickfix list opening & navigation
+vim.keymap.set('n', '<leader>co', function()
+    vim.diagnostic.setqflist() -- create quickfix list
+    vim.cmd([[:copen]])
+end)
+vim.keymap.set('n', '<leader>cn', [[:cnext<CR>]]) 
+vim.keymap.set('n', '<leader>cp', [[:cprev<CR>]])
+
 -- quote, bracket etc. auto complete (if tabbed after)
 local openers = {
     ["\""] = "\"",
@@ -72,10 +92,10 @@ for ochar, cchar in pairs(openers) do
     vim.keymap.set('i', ochar .. "<Tab>", ochar .. cchar .. "<Esc>i")
 end
 
--- unindenting with shift-tab in all modes
+-- unindenting with shift-tab/indenting with tab in all modes
 local modes = {
     ['v'] = {'<gv', '>gv'},
-    ['i'] = {'<C-d>', '<C-t>'},
+    --['i'] = {'<C-d>', '<C-t>'},
     ['n'] = {'<<', '>>'},
 }
 for mode, toggles in pairs(modes) do

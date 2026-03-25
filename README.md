@@ -83,6 +83,7 @@ Useful vim and nvim resources consulted to compile this config are:
     └── .zshrc
 ```
 </details>
+
 In order for zsh to find this config file in the recommended arborescence, include the following code in your `~/.zshenv` file:
 
 ```
